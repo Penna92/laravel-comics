@@ -18,9 +18,11 @@ Route::get('/', function () {
     $comics = config('comic');
     $socials = config('social');
     $merchandise = config('merchandise');
+    $cards = config('maingrid');
     // dump($comics);
     // dump($headerLinks);
     // dump($socials);
     // dump($merchandise);
-    return view('home', ['comics' => $comics, 'headerLinks' => $headerLinks, 'socials' => $socials, 'merch' => $merchandise]);
+    // dump($cards);
+    return view('home', ['comics' => $comics, 'headerLinks' => $headerLinks, 'socials' => $socials, 'merch' => $merchandise, 'cards' => $cards]);
 });
