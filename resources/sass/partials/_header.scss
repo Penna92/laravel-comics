@@ -1,0 +1,67 @@
+header {
+    height: 150px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    z-index: 9999;
+    #top-header {
+        height: 30px;
+        line-height: 30px;
+        background-color: $azzurro;
+        text-align: end;
+        color: white;
+        h6 {
+            display: inline-block;
+            margin-left: 20px;
+        }
+    }
+    #bottom-header {
+        height: 120px;
+        background-color: white;
+        nav {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            #logo {
+                img {
+                    height: 60px;
+                }
+            }
+            ul {
+                height: 100%;
+                display: flex;
+                gap: 15px;
+                li {
+                    list-style-type: none;
+                    height: 100%;
+                    line-height: 120px;
+                    cursor: pointer;
+                    &:hover {
+                        a {
+                            color: $azzurro;
+                        }
+
+                        border-bottom: 3px solid $azzurro;
+                    }
+                    a {
+                        color: black;
+                    }
+                }
+            }
+            #search-bar {
+                form {
+                    border-bottom: 3px solid $azzurro;
+                }
+                input {
+                    width: 100px;
+                    font-weight: bold;
+                    color: black;
+                    text-align: end;
+                }
+            }
+        }
+    }
+}

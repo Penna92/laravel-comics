@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 0 15%;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  height: 150px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  z-index: 9999;
+}
+
+header #top-header {
+  height: 30px;
+  line-height: 30px;
+  background-color: #0282f9;
+  text-align: end;
+  color: white;
+}
+
+header #top-header h6 {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+header #bottom-header {
+  height: 120px;
+  background-color: white;
+}
+
+header #bottom-header nav {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header #bottom-header nav #logo img {
+  height: 60px;
+}
+
+header #bottom-header nav ul {
+  height: 100%;
+  display: flex;
+  gap: 15px;
+}
+
+header #bottom-header nav ul li {
+  list-style-type: none;
+  height: 100%;
+  line-height: 120px;
+  cursor: pointer;
+}
+
+header #bottom-header nav ul li:hover {
+  border-bottom: 3px solid #0282f9;
+}
+
+header #bottom-header nav ul li:hover a {
+  color: #0282f9;
+}
+
+header #bottom-header nav ul li a {
+  color: black;
+}
+
+header #bottom-header nav #search-bar form {
+  border-bottom: 3px solid #0282f9;
+}
+
+header #bottom-header nav #search-bar input {
+  width: 100px;
+  font-weight: bold;
+  color: black;
+  text-align: end;
+}
+
