@@ -5,12 +5,20 @@
 }
 
 .container {
-    padding: 0 15%;
+    padding: 0 10%;
 }
 
 a {
     text-decoration: none;
 }
 
+ul {
+    padding-inline-start: 0px !important;
+    // margin-right: 10px;
+}
+
 // variables
 $azzurro: #0282f9;
+$grey-font: #656760;
+$bg-dark-grey: #303030;
+$hover: rgba(0, 0, 0, 0.2);

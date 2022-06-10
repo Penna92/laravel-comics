@@ -5,11 +5,16 @@
 }
 
 .container {
-  padding: 0 15%;
+  padding: 0 10%;
 }
 
 a {
   text-decoration: none;
+}
+
+ul {
+  -webkit-padding-start: 0px !important;
+          padding-inline-start: 0px !important;
 }
 
 header {
@@ -19,9 +24,8 @@ header {
   left: 0;
   right: 0;
   background-color: white;
-  z-index: 9999;
+  z-index: 999;
 }
-
 header #top-header {
   height: 30px;
   line-height: 30px;
@@ -29,57 +33,46 @@ header #top-header {
   text-align: end;
   color: white;
 }
-
 header #top-header h6 {
   display: inline-block;
   margin-left: 20px;
 }
-
 header #bottom-header {
   height: 120px;
   background-color: white;
 }
-
 header #bottom-header nav {
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
 header #bottom-header nav #logo img {
   height: 60px;
 }
-
 header #bottom-header nav ul {
   height: 100%;
   display: flex;
   gap: 15px;
 }
-
 header #bottom-header nav ul li {
   list-style-type: none;
   height: 100%;
   line-height: 120px;
   cursor: pointer;
 }
-
 header #bottom-header nav ul li:hover {
   border-bottom: 3px solid #0282f9;
 }
-
 header #bottom-header nav ul li:hover a {
   color: #0282f9;
 }
-
 header #bottom-header nav ul li a {
   color: black;
 }
-
 header #bottom-header nav #search-bar form {
   border-bottom: 3px solid #0282f9;
 }
-
 header #bottom-header nav #search-bar input {
   width: 100px;
   font-weight: bold;
@@ -87,3 +80,122 @@ header #bottom-header nav #search-bar input {
   text-align: end;
 }
 
+#upper-footer {
+  width: 100%;
+  height: 150px;
+  background-color: #0282f9;
+  z-index: 99;
+}
+#upper-footer ul {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+#upper-footer ul li {
+  color: white;
+  height: 30%;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+#upper-footer ul li img {
+  height: 100%;
+}
+#upper-footer ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+footer {
+  width: 100%;
+}
+footer #central-footer {
+  overflow-y: hidden;
+  background: url("../images/footer-bg.jpg") center center no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 0;
+}
+footer #central-footer #center-left-footer {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+}
+footer #central-footer #center-left-footer h2 {
+  color: white;
+}
+footer #central-footer #center-left-footer ul {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+footer #central-footer #center-left-footer ul li {
+  list-style-type: none;
+}
+footer #central-footer #center-left-footer ul li a {
+  text-decoration: none;
+  color: #656760;
+}
+footer #central-footer #center-left-footer ul li a:hover {
+  color: white;
+}
+footer #central-footer #center-right-footer {
+  margin-top: -50px;
+  margin-bottom: -50px;
+}
+footer #bottom-footer {
+  background-color: #303030;
+  width: 100%;
+  height: 100px;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer #bottom-footer #bottom-left-footer button {
+  padding: 10px;
+  color: white;
+  border: 1px solid #0282f9;
+  background-color: #303030;
+  cursor: pointer;
+}
+footer #bottom-footer #bottom-left-footer button:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+footer #bottom-footer #bottom-right-footer {
+  display: flex;
+  align-items: center;
+}
+footer #bottom-footer #bottom-right-footer h4 {
+  color: #0282f9;
+  margin-right: 10px;
+}
+footer #bottom-footer #bottom-right-footer ul {
+  display: flex;
+  gap: 10px;
+}
+footer #bottom-footer #bottom-right-footer ul li {
+  padding: auto;
+  border-radius: 100%;
+  list-style-type: none;
+  text-align: center;
+}
+footer #bottom-footer #bottom-right-footer ul li:hover {
+  background-color: white;
+}
+footer #bottom-footer #bottom-right-footer ul li a {
+  text-decoration: none;
+  color: #303030;
+}
+footer #bottom-footer #bottom-right-footer ul li a img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
