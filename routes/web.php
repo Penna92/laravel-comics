@@ -17,8 +17,10 @@ Route::get('/', function () {
     $headerLinks = config('headerlinks');
     $comics = config('comic');
     $socials = config('social');
+    $merchandise = config('merchandise');
     // dump($comics);
     // dump($headerLinks);
     // dump($socials);
-    return view('home', ['comics' => $comics, 'headerLinks' => $headerLinks, 'socials' => $socials]);
+    // dump($merchandise);
+    return view('home', ['comics' => $comics, 'headerLinks' => $headerLinks, 'socials' => $socials, 'merch' => $merchandise]);
 });

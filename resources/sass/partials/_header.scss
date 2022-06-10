@@ -1,5 +1,5 @@
 header {
-    height: 150px;
+    height: 120px;
     position: fixed;
     top: 0;
     left: 0;
@@ -18,7 +18,7 @@ header {
         }
     }
     #bottom-header {
-        height: 120px;
+        height: 90px;
         background-color: white;
         nav {
             height: 100%;
@@ -33,11 +33,11 @@ header {
             ul {
                 height: 100%;
                 display: flex;
-                gap: 15px;
+                gap: 20px;
                 li {
                     list-style-type: none;
                     height: 100%;
-                    line-height: 120px;
+                    line-height: 90px;
                     cursor: pointer;
                     &:hover {
                         a {
@@ -52,14 +52,16 @@ header {
                 }
             }
             #search-bar {
-                form {
-                    border-bottom: 3px solid $azzurro;
-                }
+                border-bottom: 3px solid $azzurro;
                 input {
                     width: 100px;
                     font-weight: bold;
                     color: black;
                     text-align: end;
+                }
+                button {
+                    background-color: transparent;
+                    cursor: pointer;
                 }
             }
         }
