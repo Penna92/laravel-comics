@@ -2,7 +2,7 @@
 
 return [
     [
-        'link' => 'CHARACHTERS',
+        'link' => 'CHARACTERS',
         'url' => '#'
     ],
     [

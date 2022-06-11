@@ -16,9 +16,12 @@ ul {
     padding-inline-start: 0px !important;
     // margin-right: 10px;
 }
-
+html,
+body {
+    font-family: sans-serif;
+}
 // variables
 $azzurro: #0282f9;
-$grey-font: #656760;
+$grey-font: #959595;
 $bg-dark-grey: #303030;
 $hover: rgba(0, 0, 0, 0.2);

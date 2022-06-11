@@ -17,6 +17,11 @@ ul {
           padding-inline-start: 0px !important;
 }
 
+html,
+body {
+  font-family: sans-serif;
+}
+
 header {
   height: 120px;
   position: fixed;
@@ -153,35 +158,6 @@ header #bottom-header nav #search-bar button {
   transform: scale(1.1);
 }
 
-#upper-footer {
-  width: 100%;
-  height: 150px;
-  background-color: #0282f9;
-  z-index: 99;
-}
-#upper-footer ul {
-  height: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-#upper-footer ul li {
-  color: white;
-  height: 30%;
-  list-style-type: none;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  cursor: pointer;
-}
-#upper-footer ul li img {
-  height: 100%;
-}
-#upper-footer ul li a {
-  text-decoration: none;
-  color: white;
-}
-
 footer {
   width: 100%;
 }
@@ -196,6 +172,11 @@ footer #central-footer {
 }
 footer #central-footer #center-left-footer {
   width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+footer #central-footer #center-left-footer .lists {
   display: flex;
   justify-content: space-between;
 }
@@ -213,9 +194,23 @@ footer #central-footer #center-left-footer ul li {
 }
 footer #central-footer #center-left-footer ul li a {
   text-decoration: none;
-  color: #656760;
+  color: #959595;
 }
 footer #central-footer #center-left-footer ul li a:hover {
+  color: white;
+}
+footer #central-footer #center-left-footer #copyright-link {
+  margin-top: 20px;
+}
+footer #central-footer #center-left-footer #copyright-link li {
+  list-style-type: none;
+  color: #959595;
+}
+footer #central-footer #center-left-footer #copyright-link li a {
+  text-decoration: none;
+  color: #0282f9;
+}
+footer #central-footer #center-left-footer #copyright-link li a:hover {
   color: white;
 }
 footer #central-footer #center-right-footer {
@@ -270,4 +265,33 @@ footer #bottom-footer #bottom-right-footer ul li a img {
   width: 100%;
   height: 100%;
   overflow: hidden;
+}
+
+#upper-footer {
+  width: 100%;
+  height: 150px;
+  background-color: #0282f9;
+  z-index: 99;
+}
+#upper-footer ul {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#upper-footer ul li {
+  color: white;
+  height: 30%;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+#upper-footer ul li img {
+  height: 100%;
+}
+#upper-footer ul li a {
+  text-decoration: none;
+  color: white;
 }
