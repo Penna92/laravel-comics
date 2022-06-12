@@ -27,3 +27,9 @@ Route::get('/action', function () {
     $socials = config('social');
     return view('action', ['headerLinks' => $headerLinks, 'socials' => $socials]);
 });
+
+Route::get('/american-vampire', function () {
+    $headerLinks = config('headerlinks');
+    $socials = config('social');
+    return view('american-vampire', ['headerLinks' => $headerLinks, 'socials' => $socials]);
+});

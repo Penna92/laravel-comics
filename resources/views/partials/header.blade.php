@@ -13,16 +13,10 @@
                 <li>
                     <h5><a href="{{$link['url']}}">{{$link['link']}}</a></h5>
                 </li>
-
                 @endforeach
                 <li>
                     <h5><a href="">SHOP <i class="fa-solid fa-caret-down"></i></a></h5>
                 </li>
-                {{-- <li>
-                    <a href="">
-                        <h5>CHARACTERS</h5>
-                    </a>
-                </li> --}}
             </ul>
             <div id="search-bar">
                 <input type="text" placeholder="Search" name="search">

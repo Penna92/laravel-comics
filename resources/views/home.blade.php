@@ -9,12 +9,7 @@
     <ul>
         @foreach ($cards as $card)
         <li>
-            <a href="action">
-                {{-- In questo momento tutte le cards reindirizzano alla pagina /action
-                Potrei aggiungere una struttura dati con 12 parametri (/action, /american-vampire, /aquaman) e
-                aggiungergli dinamicamente alle ancore del link, così da poter effettuare il routing per tutte e 12 le
-                cards nelle rispettive single pages.
-                --}}
+            <a href="{{$card['routes']}}">
                 <img src="{{$card['thumb']}}" alt="{{$card['series']}}" />
                 <h4>{{ $card['series'] }}</h4>
             </a>
