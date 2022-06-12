@@ -1,6 +1,5 @@
 //JUMBOTRON
 #jumbotron {
-    margin-top: 120px;
     width: 100%;
     height: 50vh;
     background: url("../images/jumbotron.jpg");
@@ -69,6 +68,177 @@
         &:hover {
             transform: scale(1.1);
             //   opacity: 0.6;
+        }
+    }
+}
+
+// SINGLE CARD PAGES MAIN SECTION
+.blue-section {
+    height: 80px;
+    background-color: $azzurro;
+}
+
+.main-content {
+    .card {
+        height: 300px;
+        width: 200px;
+        border: 1px solid white;
+        background: url("https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX")
+            center center no-repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-size: cover;
+        margin-top: -320px;
+        margin-bottom: 100px;
+        .card-title {
+            background-color: #00a9d9;
+            width: fit-content;
+            a {
+                display: block;
+                padding: 3px;
+                height: 100%;
+                width: 100%;
+                color: white;
+            }
+        }
+        .view-gallery {
+            background-color: #00a9d9;
+            text-align: center;
+            a {
+                display: block;
+                padding: 3px;
+                height: 100%;
+                width: 100%;
+                color: white;
+            }
+        }
+    }
+    .ad {
+        text-align: end;
+        h4 {
+            color: #738ba6;
+        }
+    }
+    .central-content {
+        display: flex;
+        .card-description {
+            width: 70%;
+            .card-availability {
+                margin: 20px auto;
+                border-bottom: 1px solid #419045;
+                height: 50px;
+                background-color: #55ba59;
+                display: flex;
+                .card-price {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    height: 100%;
+                    width: 70%;
+                    border-right: 1px solid #419045;
+                    h4 {
+                        color: #bafd93;
+                        margin: auto 20px;
+                        span {
+                            color: white;
+                        }
+                    }
+                }
+                .card-check-availability {
+                    height: 100%;
+                    line-height: 50px;
+                    width: 30%;
+                    border-left: 1px solid #419045;
+                    text-align: center;
+                    h4 {
+                        color: white;
+                    }
+                }
+            }
+            .card-text {
+                color: #738ba6;
+            }
+        }
+        .advertisement {
+            width: 30%;
+            text-align: end;
+            img {
+                width: 90%;
+            }
+        }
+    }
+}
+// SINGLE CARD PAGES UPPER FOOTER
+#top-upper-footer {
+    margin-top: 100px;
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+    padding-bottom: 100px;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        ul {
+            width: 50%;
+            li {
+                display: flex;
+                justify-content: space-between;
+                border-bottom: 1px solid #e6e6e6;
+                padding: 10px 0;
+                color: #003f5e;
+                span {
+                    width: 60%;
+                    a {
+                        color: #1ec1e8;
+                    }
+                }
+            }
+            li:first-child {
+                padding: 40px 0;
+            }
+        }
+    }
+}
+#action-upper-footer {
+    width: 100%;
+    height: 60px;
+    background-color: #f6f6f6;
+    z-index: 99;
+    .container {
+        height: 100%;
+        ul {
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            li {
+                padding: 15px;
+                width: 25%;
+                height: 100%;
+                color: $grey-font;
+                border-left: 1px solid #e6e6e6;
+                list-style-type: none;
+                display: flex;
+                justify-content: space-between;
+                gap: 10px;
+                cursor: pointer;
+                img {
+                    height: 100%;
+                    filter: invert(0.5);
+                }
+                a {
+                    text-decoration: none;
+                    color: $grey-font;
+                }
+                span {
+                    font-size: 10px;
+                    font-weight: bold;
+                }
+            }
+            li:last-child {
+                border-right: 1px solid #e6e6e6;
+            }
         }
     }
 }

@@ -53,19 +53,19 @@
         <img src="../images/dc-logo-bg.png" alt="DC Logo Background" />
       </div>
     </div>
-    <div id="bottom-footer" class="container">
-      <div id="bottom-left-footer">
-        <button>SIGN-UP NOW!</button>
-      </div>
-      <div id="bottom-right-footer">
-        <h4>FOLLOW US</h4>
-        <ul>
-           @foreach ($socials as $item)
-              <li>
-                  <a href="{{$item['link']}}"><img src="{{$item['icon']}}" alt="{{$item['name']}}" /></a>
-              </li>
-          @endforeach
-        </ul>
-      </div>
+      <div id="bottom-footer" class="container">
+        <div id="bottom-left-footer">
+          <button>SIGN-UP NOW!</button>
+        </div>
+        <div id="bottom-right-footer">
+          <h4>FOLLOW US</h4>
+          <ul>
+             @foreach ($socials as $item)
+                <li>
+                    <a href="{{$item['link']}}"><img src="{{$item['icon']}}" alt="{{$item['name']}}" /></a>
+                </li>
+            @endforeach
+          </ul>
+        </div>
     </div>
   </footer>

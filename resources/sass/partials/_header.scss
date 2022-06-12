@@ -1,11 +1,13 @@
 header {
     height: 120px;
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     right: 0;
     background-color: white;
     z-index: 999;
+    min-width: 1200px;
+    overflow-x: auto;
     #top-header {
         height: 30px;
         line-height: 30px;
@@ -15,11 +17,16 @@ header {
         h6 {
             display: inline-block;
             margin-left: 20px;
+            a {
+                color: white;
+            }
         }
     }
     #bottom-header {
         height: 90px;
         background-color: white;
+        min-width: 1200px;
+        overflow-x: auto;
         nav {
             height: 100%;
             display: flex;
@@ -33,7 +40,7 @@ header {
             ul {
                 height: 100%;
                 display: flex;
-                gap: 20px;
+                gap: 25px;
                 li {
                     list-style-type: none;
                     height: 100%;
@@ -43,11 +50,13 @@ header {
                         a {
                             color: $azzurro;
                         }
-
                         border-bottom: 3px solid $azzurro;
                     }
                     a {
                         color: black;
+                        i {
+                            color: $azzurro;
+                        }
                     }
                 }
             }

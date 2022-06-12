@@ -19,10 +19,11 @@ Route::get('/', function () {
     $socials = config('social');
     $merchandise = config('merchandise');
     $cards = config('maingrid');
-    // dump($comics);
-    // dump($headerLinks);
-    // dump($socials);
-    // dump($merchandise);
-    // dump($cards);
     return view('home', ['comics' => $comics, 'headerLinks' => $headerLinks, 'socials' => $socials, 'merch' => $merchandise, 'cards' => $cards]);
+});
+
+Route::get('/action', function () {
+    $headerLinks = config('headerlinks');
+    $socials = config('social');
+    return view('action', ['headerLinks' => $headerLinks, 'socials' => $socials]);
 });

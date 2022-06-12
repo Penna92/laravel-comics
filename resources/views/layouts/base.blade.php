@@ -17,6 +17,10 @@
         @yield('mainContent')
     </main>
 
+    <section>
+        @yield('upperFooter')
+    </section>
+
     @include('partials.footer')
 </body>
 

@@ -37,8 +37,4 @@ return [
         'link' => 'NEWS',
         'url' => '#'
     ],
-    [
-        'link' => 'SHOP ▼',
-        'url' => '#'
-    ]
 ];

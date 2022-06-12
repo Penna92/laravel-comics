@@ -20,16 +20,20 @@ ul {
 html,
 body {
   font-family: sans-serif;
+  min-width: 1200px;
 }
 
 header {
   height: 120px;
-  position: fixed;
+  position: -webkit-sticky;
+  position: sticky;
   top: 0;
   left: 0;
   right: 0;
   background-color: white;
   z-index: 999;
+  min-width: 1200px;
+  overflow-x: auto;
 }
 header #top-header {
   height: 30px;
@@ -42,9 +46,14 @@ header #top-header h6 {
   display: inline-block;
   margin-left: 20px;
 }
+header #top-header h6 a {
+  color: white;
+}
 header #bottom-header {
   height: 90px;
   background-color: white;
+  min-width: 1200px;
+  overflow-x: auto;
 }
 header #bottom-header nav {
   height: 100%;
@@ -58,7 +67,7 @@ header #bottom-header nav #logo img {
 header #bottom-header nav ul {
   height: 100%;
   display: flex;
-  gap: 20px;
+  gap: 25px;
 }
 header #bottom-header nav ul li {
   list-style-type: none;
@@ -75,6 +84,9 @@ header #bottom-header nav ul li:hover a {
 header #bottom-header nav ul li a {
   color: black;
 }
+header #bottom-header nav ul li a i {
+  color: #0282f9;
+}
 header #bottom-header nav #search-bar {
   border-bottom: 3px solid #0282f9;
 }
@@ -90,7 +102,6 @@ header #bottom-header nav #search-bar button {
 }
 
 #jumbotron {
-  margin-top: 120px;
   width: 100%;
   height: 50vh;
   background: url("../images/jumbotron.jpg");
@@ -156,6 +167,176 @@ header #bottom-header nav #search-bar button {
 }
 #grid button:hover {
   transform: scale(1.1);
+}
+
+.blue-section {
+  height: 80px;
+  background-color: #0282f9;
+}
+
+.main-content .card {
+  height: 300px;
+  width: 200px;
+  border: 1px solid white;
+  background: url("https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX") center center no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-size: cover;
+  margin-top: -320px;
+  margin-bottom: 100px;
+}
+.main-content .card .card-title {
+  background-color: #00a9d9;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.main-content .card .card-title a {
+  display: block;
+  padding: 3px;
+  height: 100%;
+  width: 100%;
+  color: white;
+}
+.main-content .card .view-gallery {
+  background-color: #00a9d9;
+  text-align: center;
+}
+.main-content .card .view-gallery a {
+  display: block;
+  padding: 3px;
+  height: 100%;
+  width: 100%;
+  color: white;
+}
+.main-content .ad {
+  text-align: end;
+}
+.main-content .ad h4 {
+  color: #738ba6;
+}
+.main-content .central-content {
+  display: flex;
+}
+.main-content .central-content .card-description {
+  width: 70%;
+}
+.main-content .central-content .card-description .card-availability {
+  margin: 20px auto;
+  border-bottom: 1px solid #419045;
+  height: 50px;
+  background-color: #55ba59;
+  display: flex;
+}
+.main-content .central-content .card-description .card-availability .card-price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  width: 70%;
+  border-right: 1px solid #419045;
+}
+.main-content .central-content .card-description .card-availability .card-price h4 {
+  color: #bafd93;
+  margin: auto 20px;
+}
+.main-content .central-content .card-description .card-availability .card-price h4 span {
+  color: white;
+}
+.main-content .central-content .card-description .card-availability .card-check-availability {
+  height: 100%;
+  line-height: 50px;
+  width: 30%;
+  border-left: 1px solid #419045;
+  text-align: center;
+}
+.main-content .central-content .card-description .card-availability .card-check-availability h4 {
+  color: white;
+}
+.main-content .central-content .card-description .card-text {
+  color: #738ba6;
+}
+.main-content .central-content .advertisement {
+  width: 30%;
+  text-align: end;
+}
+.main-content .central-content .advertisement img {
+  width: 90%;
+}
+
+#top-upper-footer {
+  margin-top: 100px;
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+  padding-bottom: 100px;
+}
+#top-upper-footer .container {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+#top-upper-footer .container ul {
+  width: 50%;
+}
+#top-upper-footer .container ul li {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #e6e6e6;
+  padding: 10px 0;
+  color: #003f5e;
+}
+#top-upper-footer .container ul li span {
+  width: 60%;
+}
+#top-upper-footer .container ul li span a {
+  color: #1ec1e8;
+}
+#top-upper-footer .container ul li:first-child {
+  padding: 40px 0;
+}
+
+#action-upper-footer {
+  width: 100%;
+  height: 60px;
+  background-color: #f6f6f6;
+  z-index: 99;
+}
+#action-upper-footer .container {
+  height: 100%;
+}
+#action-upper-footer .container ul {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#action-upper-footer .container ul li {
+  padding: 15px;
+  width: 25%;
+  height: 100%;
+  color: #959595;
+  border-left: 1px solid #e6e6e6;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  cursor: pointer;
+}
+#action-upper-footer .container ul li img {
+  height: 100%;
+  filter: invert(0.5);
+}
+#action-upper-footer .container ul li a {
+  text-decoration: none;
+  color: #959595;
+}
+#action-upper-footer .container ul li span {
+  font-size: 10px;
+  font-weight: bold;
+}
+#action-upper-footer .container ul li:last-child {
+  border-right: 1px solid #e6e6e6;
 }
 
 footer {
